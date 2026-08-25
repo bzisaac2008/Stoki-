@@ -1,0 +1,483 @@
+.categorias-page {
+  width: 100%;
+  min-height: 100%;
+  padding: 32px;
+  background: #f5f7fb;
+  box-sizing: border-box;
+}
+
+/* =========================
+   CABEÇALHO
+========================= */
+
+.categorias-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 30px;
+}
+
+.categorias-header-icon {
+  width: 58px;
+  height: 58px;
+  border-radius: 12px;
+  background: #eaf1ff;
+  color: #2563eb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+}
+
+.categorias-header h1 {
+  margin: 0;
+  font-size: 34px;
+  line-height: 1.1;
+  color: #111827;
+}
+
+.categorias-header p {
+  margin: 7px 0 0;
+  color: #64748b;
+  font-size: 16px;
+}
+
+/* =========================
+   ERRO
+========================= */
+
+.categorias-erro {
+  background: #fff1f2;
+  border: 1px solid #fecdd3;
+  color: #dc2626;
+  padding: 14px 18px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+/* =========================
+   CARD
+========================= */
+
+.categoria-card {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 14px;
+  padding: 24px;
+  margin-bottom: 22px;
+  box-shadow: 0 2px 8px rgba(15, 23, 42, 0.04);
+}
+
+.card-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 25px;
+}
+
+.card-title span {
+  color: #2563eb;
+  font-size: 20px;
+}
+
+.card-title h2 {
+  margin: 0;
+  font-size: 20px;
+  color: #172033;
+}
+
+/* =========================
+   FORMULÁRIO
+========================= */
+
+.categoria-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 28px;
+}
+
+.form-left,
+.form-right {
+  display: flex;
+  flex-direction: column;
+}
+
+.categoria-form label {
+  font-size: 15px;
+  font-weight: 700;
+  color: #172033;
+  margin-bottom: 9px;
+}
+
+.categoria-form label span {
+  color: #64748b;
+  font-weight: 400;
+}
+
+.categoria-form input[type="text"],
+.categoria-form textarea {
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #d8dee9;
+  border-radius: 8px;
+  padding: 13px 14px;
+  font-size: 15px;
+  color: #172033;
+  outline: none;
+  background: #fff;
+}
+
+.categoria-form input[type="text"]:focus,
+.categoria-form textarea:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.10);
+}
+
+.categoria-form textarea {
+  height: 82px;
+  resize: vertical;
+  font-family: inherit;
+}
+
+.checkbox-label {
+  margin-top: 20px;
+}
+
+.checkbox-option {
+  display: flex !important;
+  align-items: center;
+  gap: 9px;
+  cursor: pointer;
+  font-weight: 600 !important;
+  margin: 0 !important;
+}
+
+.checkbox-option input {
+  display: none;
+}
+
+.custom-checkbox {
+  width: 30px;
+  height: 30px;
+  border-radius: 5px;
+  background: #22c55e;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 21px;
+  font-weight: 700;
+}
+
+.btn-adicionar {
+  margin-top: 22px;
+  border: none;
+  background: #2563eb;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 7px;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  transition: 0.2s;
+}
+
+.btn-adicionar:hover {
+  background: #1d4ed8;
+}
+
+.btn-adicionar:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* =========================
+   LISTA
+========================= */
+
+.lista-card {
+  padding-bottom: 18px;
+}
+
+.lista-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 14px;
+}
+
+.busca-container {
+  width: 285px;
+  height: 42px;
+  border: 1px solid #d8dee9;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  padding: 0 12px;
+  box-sizing: border-box;
+  background: #fff;
+}
+
+.busca-container span {
+  color: #475569;
+  font-size: 22px;
+  margin-right: 8px;
+}
+
+.busca-container input {
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  color: #172033;
+}
+
+.contador {
+  border: 1px solid #dbe2ea;
+  background: #f8fafc;
+  border-radius: 8px;
+  padding: 8px 13px;
+  color: #64748b;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+/* =========================
+   TABELA
+========================= */
+
+.tabela-container {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.tabela-container table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 850px;
+}
+
+.tabela-container thead {
+  background: #f8fafc;
+}
+
+.tabela-container th {
+  text-align: left;
+  padding: 12px 10px;
+  color: #475569;
+  font-size: 13px;
+  font-weight: 700;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.tabela-container td {
+  padding: 11px 10px;
+  border-bottom: 1px solid #e5e7eb;
+  color: #475569;
+  font-size: 14px;
+}
+
+.tabela-container tbody tr:hover {
+  background: #fafcff;
+}
+
+.nome-categoria {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.nome-categoria strong {
+  color: #172033;
+  font-size: 14px;
+}
+
+.categoria-icon {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.icon-0 {
+  background: #dbeafe;
+  color: #2563eb;
+}
+
+.icon-1 {
+  background: #ede9fe;
+  color: #7c3aed;
+}
+
+.icon-2 {
+  background: #ffedd5;
+  color: #f97316;
+}
+
+/* =========================
+   STATUS
+========================= */
+
+.status {
+  display: inline-flex;
+  align-items: center;
+  padding: 5px 10px;
+  border-radius: 8px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.status.ativa {
+  color: #16a34a;
+  background: #dcfce7;
+  border: 1px solid #bbf7d0;
+}
+
+.status.inativa {
+  color: #dc2626;
+  background: #fee2e2;
+  border: 1px solid #fecaca;
+}
+
+/* =========================
+   AÇÕES
+========================= */
+
+.acoes {
+  display: flex;
+  gap: 8px;
+}
+
+.acoes button {
+  background: white;
+  padding: 7px 12px;
+  border-radius: 7px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btn-editar {
+  border: 1px solid #93c5fd;
+  color: #2563eb;
+}
+
+.btn-editar:hover {
+  background: #eff6ff;
+}
+
+.btn-excluir {
+  border: 1px solid #fca5a5;
+  color: #dc2626;
+}
+
+.btn-excluir:hover {
+  background: #fef2f2;
+}
+
+.sem-categorias {
+  text-align: center !important;
+  padding: 35px !important;
+  color: #64748b !important;
+}
+
+/* =========================
+   PAGINAÇÃO
+========================= */
+
+.paginacao {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 18px;
+  color: #64748b;
+  font-size: 14px;
+}
+
+.paginacao select {
+  border: 1px solid #d8dee9;
+  border-radius: 7px;
+  padding: 8px 14px;
+  background: white;
+  outline: none;
+}
+
+.paginas {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.paginas button {
+  width: 36px;
+  height: 36px;
+  border: 1px solid #dbe2ea;
+  background: white;
+  border-radius: 7px;
+  color: #64748b;
+  font-size: 16px;
+}
+
+.paginas button:disabled {
+  opacity: 0.5;
+}
+
+.paginas .pagina-atual {
+  background: #2563eb;
+  color: white;
+  border-color: #2563eb;
+}
+
+/* =========================
+   RESPONSIVO
+========================= */
+
+@media (max-width: 900px) {
+  .categoria-form {
+    grid-template-columns: 1fr;
+  }
+
+  .lista-top {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .contador {
+    align-self: flex-start;
+  }
+}
+
+@media (max-width: 600px) {
+  .categorias-page {
+    padding: 18px;
+  }
+
+  .categorias-header h1 {
+    font-size: 28px;
+  }
+
+  .categoria-card {
+    padding: 18px;
+  }
+
+  .busca-container {
+    width: 100%;
+  }
+
+  .paginacao {
+    flex-wrap: wrap;
+  }
+
+  .paginas {
+    margin-left: 0;
+  }
+}

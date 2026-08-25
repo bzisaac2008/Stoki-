@@ -1,0 +1,505 @@
+html, body, #root {
+  width: 100% !important;
+  height: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+.stoki-page {
+  min-height: 100vh;
+  width: 100vw;
+  background: #f1f5f9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+}
+
+.stoki-card {
+  width: 100%;
+  max-width: 1200px;
+  min-height: 720px;
+  background: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  overflow: hidden;
+}
+
+/* =========================================
+   LADO ESQUERDO
+========================================= */
+
+.stoki-left {
+  background: linear-gradient(180deg, #eff6ff 0%, #dbeafe 100%);
+  padding: 48px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.stoki-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.stoki-brand-logo {
+  width: 42px;
+  height: 42px;
+  background: #2563eb;
+  color: white;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.stoki-title {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.stoki-subtitle {
+  margin: 0;
+  font-size: 13px;
+  color: #64748b;
+}
+
+.stoki-hero h2 {
+  font-size: 30px;
+  color: #0f172a;
+  margin: 28px 0 12px 0;
+  line-height: 1.25;
+  font-weight: 700;
+}
+
+.stoki-hero h2 span {
+  color: #2563eb;
+}
+
+.stoki-hero p {
+  color: #64748b;
+  font-size: 15px;
+  margin: 0;
+  line-height: 1.5;
+}
+
+/* ILUSTRAÇÃO */
+
+.stoki-illustration {
+  position: relative;
+  margin: 20px 0;
+  height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mockup-screen {
+  width: 320px;
+  height: 190px;
+  background: #ffffff;
+  border-radius: 12px;
+  border: 4px solid #1e293b;
+  box-shadow: 0 20px 25px -5px rgba(0,0,0,0.1);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.mockup-nav {
+  height: 16px;
+  background: #1e293b;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding-left: 8px;
+}
+
+.mockup-nav .dot {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: #475569;
+}
+
+.mockup-body {
+  display: flex;
+  flex: 1;
+}
+
+.mockup-sidebar {
+  width: 80px;
+  background: #0f172a;
+  padding: 10px 6px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.sb-item {
+  font-size: 8px;
+  color: #94a3b8;
+  padding: 4px;
+  border-radius: 3px;
+}
+
+.sb-item.active {
+  background: #2563eb;
+  color: #ffffff;
+}
+
+.mockup-content {
+  flex: 1;
+  background: #f8fafc;
+  padding: 10px;
+}
+
+.mockup-cards {
+  display: flex;
+  gap: 6px;
+}
+
+.m-card {
+  flex: 1;
+  background: white;
+  padding: 6px;
+  border-radius: 4px;
+  border: 1px solid #e2e8f0;
+}
+
+.m-card small {
+  display: block;
+  font-size: 7px;
+  color: #64748b;
+}
+
+.m-card strong {
+  font-size: 11px;
+  color: #0f172a;
+}
+
+.mockup-chart {
+  margin-top: 10px;
+  height: 60px;
+  background: white;
+  border-radius: 4px;
+  border: 1px solid #e2e8f0;
+  padding: 6px;
+}
+
+.chart-line {
+  width: 100%;
+  height: 100%;
+}
+
+.mockup-box-big {
+  position: absolute;
+  left: 20px;
+  bottom: 10px;
+  font-size: 55px;
+}
+
+.mockup-shelf {
+  position: absolute;
+  left: 10px;
+  top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  background: #cbd5e1;
+  padding: 4px;
+  border-radius: 4px;
+}
+
+.shelf-box {
+  font-size: 20px;
+}
+
+.mockup-clipboard {
+  position: absolute;
+  right: 30px;
+  bottom: 20px;
+  width: 45px;
+  height: 60px;
+  background: #ffffff;
+  border: 2px solid #64748b;
+  border-radius: 6px;
+  padding: 6px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.check-item {
+  font-size: 10px;
+  color: #2563eb;
+}
+
+/* RECURSOS / FEATURE CARDS */
+
+.stoki-features {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-top: 20px;
+}
+
+.feature-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.feature-icon {
+  width: 32px;
+  height: 32px;
+  background: #ffffff;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.03);
+}
+
+.feature-item strong {
+  display: block;
+  font-size: 13px;
+  color: #0f172a;
+}
+
+.feature-item p {
+  margin: 2px 0 0 0;
+  font-size: 11px;
+  color: #64748b;
+  line-height: 1.3;
+}
+
+/* =========================================
+   LADO DIREITO (FORMULÁRIO)
+========================================= */
+
+.stoki-right {
+  background: #ffffff;
+  padding: 48px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.login-card {
+  width: 100%;
+  max-width: 400px;
+  margin: auto 0;
+}
+
+.login-icon-badge {
+  width: 52px;
+  height: 52px;
+  background: #eff6ff;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px auto;
+}
+
+.login-card h2 {
+  font-size: 24px;
+  color: #0f172a;
+  text-align: center;
+  margin: 0 0 6px 0;
+  font-weight: 700;
+}
+
+.login-subtext {
+  text-align: center;
+  color: #64748b;
+  font-size: 14px;
+  margin: 0 0 28px 0;
+}
+
+.stoki-error-msg {
+  background: #fef2f2;
+  color: #dc2626;
+  padding: 10px 14px;
+  border-radius: 8px;
+  font-size: 13px;
+  margin-bottom: 16px;
+  border: 1px solid #fecaca;
+}
+
+.stoki-field {
+  margin-bottom: 18px;
+}
+
+.stoki-field label {
+  display: block;
+  font-size: 13px;
+  font-weight: 600;
+  color: #334155;
+  margin-bottom: 6px;
+}
+
+.input-box {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.field-icon {
+  position: absolute;
+  left: 14px;
+  pointer-events: none;
+}
+
+.input-box input {
+  width: 100%;
+  height: 46px;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  padding: 0 14px 0 42px;
+  font-size: 14px;
+  color: #0f172a;
+  outline: none;
+  transition: all 0.2s;
+}
+
+.input-box input:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+.toggle-eye {
+  position: absolute;
+  right: 12px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #94a3b8;
+  font-size: 14px;
+}
+
+.stoki-row-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  color: #475569;
+  cursor: pointer;
+}
+
+.checkbox-label input {
+  accent-color: #2563eb;
+  width: 16px;
+  height: 16px;
+}
+
+.forgot-link {
+  color: #2563eb;
+  font-size: 13px;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.forgot-link:hover {
+  text-decoration: underline;
+}
+
+.stoki-btn-primary {
+  width: 100%;
+  height: 46px;
+  background: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.stoki-btn-primary:hover {
+  background: #1d4ed8;
+}
+
+.divider {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: 20px 0;
+  color: #94a3b8;
+}
+
+.divider::before,
+.divider::after {
+  content: "";
+  flex: 1;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.divider span {
+  padding: 0 12px;
+  font-size: 12px;
+}
+
+.stoki-btn-outline {
+  width: 100%;
+  height: 44px;
+  background: transparent;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  color: #334155;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.stoki-btn-outline:hover {
+  background: #f8fafc;
+}
+
+.stoki-copyright {
+  font-size: 12px;
+  color: #94a3b8;
+  text-align: center;
+}
+
+/* =========================================
+   RESPONSIVIDADE
+========================================= */
+
+@media (max-width: 960px) {
+  .stoki-card {
+    grid-template-columns: 1fr;
+    max-width: 500px;
+  }
+
+  .stoki-left {
+    display: none;
+  }
+
+  .stoki-right {
+    padding: 32px 24px;
+  }
+}

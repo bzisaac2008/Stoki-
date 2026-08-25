@@ -1,0 +1,13 @@
+[
+    {
+        "nome": "notebook",
+        "sku": "TEC004",
+        "descricao": "notebook lenovo",
+        "preco": 2000.00,
+        "quantidade": 50,
+        "estoque_minimo": 2,
+        "categoria_id": null,
+        "fornecedor_id": null,
+        "ativo": true
+    }
+]
