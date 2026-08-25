@@ -1,4 +1,4 @@
-Stoki — Sistema de Gestão de Estoque
+ Stoki — Sistema de Gestão de Estoque
 
 Sistema web desenvolvido para facilitar o controle e o gerenciamento de estoque de empresas, centralizando produtos, categorias, fornecedores e movimentações em uma única aplicação.
 
